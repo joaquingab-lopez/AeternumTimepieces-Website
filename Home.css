@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .5);
+}
+.header ul{
+    text-align: center;
+}
+.logo img{
+    height: 40px;
+    width: auto;
+}
+.cart img{
+    height: 20px;
+    width: auto;
+}
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Oswald;
+    color: #FBFBFE;
+}
