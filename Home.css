@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,9 +9,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 10px 50px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #FBFBFE;
 }
 .header ul{
     text-align: center;
@@ -33,5 +33,5 @@ body{
     text-decoration: none;
     font-size: 20px;
     font-family: Oswald;
-    color: #FBFBFE;
+    color: #151515;
 }
