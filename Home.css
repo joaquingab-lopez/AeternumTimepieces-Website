@@ -2,6 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 3px;
+    font-weight: 350;
+}
+h1{
+    font-family: Oswald;
+    font-size: 50px;
+}
+h2{
+    font-family: Oswald;
+    font-size: 40px;
+}
+h3{
+    font-family: Oswald;
+    font-size: 20px;
+}
+h4{
+    font-family: Montserrat;
+    font-size: 30px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 20px;
+}
+h5{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+h6{
+    font-family: Montserrat;
+    font-size: 13px;
 }
 .header{
     width: 100%;
@@ -17,11 +47,11 @@
     text-align: center;
 }
 .logo img{
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 .cart img{
-    height: 20px;
+    height: 18px;
     width: auto;
 }
 .header ul li{
@@ -31,7 +61,7 @@
 }
 .header ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Oswald;
     color: #151515;
 }
