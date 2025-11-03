@@ -65,3 +65,105 @@ h6{
     font-family: Oswald;
     color: #151515;
 }
+.footercontainer{
+    background-color: #FBFBFE;
+    width: 100%;
+    max-width: 100%;
+}
+.footer{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr .5fr;
+    gap: 20px;
+}
+.footer ul li{
+    margin-bottom: 10px;
+}
+.footerheading1{
+    grid-area: 1/1/2;
+}
+.footerheading1 img{
+    height: 30px;
+    width: auto;
+    margin-bottom: 20px;
+}
+.footerheading1 h6{
+    margin-bottom: 20px;
+}
+.emailbox button{
+    background-color: #151515;
+    border: none;
+    font-family: Oswald;
+    color: #FBFBFE;
+    padding: 5px;
+    width: 130px;
+}
+.emailbox button:hover{
+    background-color: #99927F;
+    color: #FBFBFE;
+} 
+.emailbox input{
+    padding: 5px;
+    width: 200px;
+    font-family: Montserrat;
+}
+.footerheading2{
+    grid-area: 1/2/2/3;
+    text-align: right;
+}
+.footerheading2 h3{
+    margin-bottom: 20px;
+}
+.brands{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.brands ul li{
+    list-style: none;
+}
+.brands ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Montserrat;
+    color: #151515;
+}
+.brands ul li a:hover{
+    text-decoration: underline;
+}
+.footerheading3{
+    grid-area: 1/3/2/4;
+    text-align: right;
+}
+.footerheading3 h3{
+    margin-bottom: 20px;
+}
+.footerheading3 ul li{
+    list-style: none;
+}
+.footerheading3 ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Montserrat;
+    color: #151515;
+}
+.footerheading3 ul li a:hover{
+    text-decoration: underline;
+}
+.footerheading4{
+    grid-area: 2/1/3/2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+.footerheading4 img{
+    height: 30px;
+    width: auto;
+}
+.footerheading5{
+    grid-area: 2/2/3/4;
+    text-align: right;
+    margin-top: 30px;
+}
