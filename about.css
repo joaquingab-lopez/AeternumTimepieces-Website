@@ -16,11 +16,6 @@ body::before {
   font-size: 2rem;
 }
 
-.container {
-    width: 100%;
-    height: 80px;
-}
-
 .navbar-brand img {
     width: 272px;
     height: 37px;
@@ -49,9 +44,9 @@ img {
 .nav-link {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-style: normal;
     line-height: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fbfbfe;
 }
 
@@ -63,6 +58,7 @@ section {
     position: relative; /* Needed for positioning the pseudo-element */
     width: 100%;
     min-height: 100vh;
+    height: 1137px; 
 }
 
 section::before {
@@ -82,6 +78,7 @@ section::before {
 
 footer {
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     width: 100%;
     background-color: #FBFBFE;
     padding: 40px;
@@ -103,6 +100,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-size: 13px;  /* optional, scale font for small height */
     padding: 0 8px;
+    font-style: normal;
 }
 
 .footer-subscribe .submit-btn {
@@ -115,6 +113,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-size: 13px;  /* optional */
     flex-shrink: 0;   /* prevents shrinking */
+    font-style: normal;
 }
 
 /* BUTTON — rectangle, fixed height */
@@ -122,6 +121,7 @@ footer {
     background: #151515 !important;
     color: #FBFBFE !important;
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 13px;
     border: none;
     border-radius: 0;
@@ -161,6 +161,7 @@ footer {
     top: 90px;
     left: 97px;
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 13px;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -178,6 +179,7 @@ footer {
 .payment-row p {
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 13px;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -192,6 +194,7 @@ footer {
 
 .bottom-footer p {
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 13px;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -202,6 +205,7 @@ footer {
 h4 {
     color: #151515;
     font-family: "Oswald", sans-serif;
+    font-style: normal;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0.1em;
@@ -211,6 +215,7 @@ h4 {
 .list-unstyled {
     color: #151515;
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0.1em;
@@ -232,6 +237,7 @@ h4 {
 .quick-links ul li a,
 .text {
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 1.5;
     text-decoration: none;
@@ -253,3 +259,49 @@ h4 {
     justify-content: space-between;
     background-color: #FBFBFE;
 }
+
+.container-sm {
+    width: 825px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.heading p {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 2.6;
+    letter-spacing: 0.07em;
+    color: #FBFBFE;
+    font-style: normal;
+}
+
+.about {
+    /*width: 825px;
+    height: 264px;*/
+    width: 100%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    text-align: justify;
+}
+
+.about p{
+    /*text-align: justify;*/
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #FBFBFE;
+}
+
