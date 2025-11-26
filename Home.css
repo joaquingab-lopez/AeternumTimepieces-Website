@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-family: Oswald;
+    font-size: 50px;
+    font-weight: 400;
+}
+h2{
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 400;
+}
+h3{
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+}
+h4{
+    font-family: Montserrat;
+    font-size: 30px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+h5{
+    font-family: Montserrat;
+    font-size: 16px;
+}
+h6{
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+/*Hero Carousel*/
+.c-item{
+    height: 100vh;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.carousel-caption{
+    margin-bottom: 30px;
+}
+.btn-primary{
+    background-color: transparent;
+    border-color: #FBFBFE;
+    font-family: Oswald;
+    font-weight: 300;
+}
+.btn-primary:hover{
+    background-color: #99927F;
+    border-color: #99927F;
+    color: #FBFBFE;
+}
+
+/*Brands*/
+.brandslider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    background: #384556;
+    padding: 10px 50px;
+}
+.brandtext{
+    color: #FBFBFE;
+}
+.container{
+    display: flex;
+    width: 1100px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    gap: 10px;
+}
+.container .card{
+    display: flex;
+    flex: 0 0 calc(100% / 3);
+    scroll-snap-align: start;
+    padding: 0;
+    background-color: #667383;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card .image{
+    height: 250px;
+    width: 100%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.logo1{
+    width: 300px;
+}
+/*::-webkit-scrollbar{
+    height: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #384556;
+}
+::-webkit-scrollbar-thumb{
+    background: #99927F;
+}*/
+
+
+
+/*Spotlight*/
+.spotlight{
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 50px;
+    margin-bottom: 30px;
+}
+.spotlight h2{
+    margin-top: 30px;
+}
+.watchinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.watchimage{
+    width: 400px;
+    height: 400px;
+    background-image: url('Graphics/Watches/2.png');
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+.watchimage:hover{
+    background-image: url('Graphics/Watches/3.png');
+}
+.watchtext{
+    width: 800px;
+    color: #151515;
+}
+.watchtext h3{
+    padding-bottom: 20px;
+}
+.watchtext h4{
+    color: #99927F;
+    font-weight: 400;
+}
+.watchtext p{
+    text-align: justify;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
