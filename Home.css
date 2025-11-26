@@ -5,7 +5,9 @@
     font-weight: 400;
     letter-spacing: 3px;
 }
-
+body{
+    overflow-x: hidden;
+}
 h1{
     font-family: Oswald;
     font-size: 50px;
@@ -18,7 +20,7 @@ h2{
 }
 h3{
     font-family: Oswald;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
 }
 h4{
@@ -94,7 +96,7 @@ h6{
 }
 #custom-cards h2{
     font-family: Montserrat !important;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400 !important;
 }
 #custom-cards a{
@@ -104,49 +106,30 @@ h6{
     text-decoration: underline;
     color: white;
 }
-#custom-cards .card{
-    height: 300px !important;
-}
+
 
 /*Spotlight*/
-.spotlight{
-    height: 500px;
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 50px;
-    margin-bottom: 30px;
+.s-container{
+    background-color: #FBFBFE;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.spotlight h2{
-    margin-top: 30px;
+.s-container{
+    color: #384556;
 }
-.watchinfo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.watchimage{
-    width: 400px;
-    height: 400px;
-    background-image: url('Graphics/Watches/2.png');
-    background-size: cover;
-    transition: background-image 0.3s ease-in-out;
-}
-.watchimage:hover{
-    background-image: url('Graphics/Watches/3.png');
-}
-.watchtext{
-    width: 800px;
-    color: #151515;
-}
-.watchtext h3{
-    padding-bottom: 20px;
-}
-.watchtext h4{
+.s-text h3{
     color: #99927F;
-    font-weight: 400;
 }
-.watchtext p{
+.s-text a{
+    text-decoration: none;
+}
+.s-text a:hover{
+    text-decoration: underline;
+    color: #99927F;
+}
+.s-text p{
+    color: #384556;
     text-align: justify;
-    padding-bottom: 20px;
-    font-weight: 300;
 }
