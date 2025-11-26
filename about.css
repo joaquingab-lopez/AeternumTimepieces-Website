@@ -28,11 +28,11 @@ img {
 }
 
 .navbar-nav .nav-link img {
-    transition: opacity 0.3s ease; /* smooth transition */
+    transition: opacity 0.3s ease; 
 }
 
 .navbar-nav .nav-link:hover img {
-    opacity: 0.7; /* semi-transparent on hover */
+    opacity: 0.7;
 }
 
 .nav-item {
@@ -55,7 +55,7 @@ a:link {
 }
 
 section {
-    position: relative; /* Needed for positioning the pseudo-element */
+    position: relative; 
     width: 100%;
     min-height: 100vh;
     height: 1137px; 
@@ -72,8 +72,8 @@ section::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter:brightness(30%); /* Adjust this value (0 to 1) for desired transparency */
-    z-index: -1; /* Place the pseudo-element behind the content */
+    filter:brightness(30%); 
+    z-index: -1; 
 }
 
 footer {
@@ -89,34 +89,33 @@ footer {
 
 .footer-subscribe {
     display: flex;
-    width: 300px; /* total width */
+    width: 300px; 
 }
 
 .footer-subscribe .form-control {
-    flex: 1;          /* take remaining space */
-    height: 23px;     /* updated height */
+    flex: 1;          
+    height: 23px;    
     border: none;
     outline: none;
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;  /* optional, scale font for small height */
+    font-size: 13px; 
     padding: 0 8px;
     font-style: normal;
 }
 
 .footer-subscribe .submit-btn {
-    width: 90px;      /* fixed button width */
-    height: 23px;     /* updated height */
+    width: 90px;     
+    height: 23px;     
     border: none;
     border-radius: 0;
     background: #151515;
     color: #FBFBFE;
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;  /* optional */
-    flex-shrink: 0;   /* prevents shrinking */
+    font-size: 13px;  
+    flex-shrink: 0;   
     font-style: normal;
 }
 
-/* BUTTON — rectangle, fixed height */
 .submit-btn {
     background: #151515 !important;
     color: #FBFBFE !important;
@@ -127,18 +126,16 @@ footer {
     border-radius: 0;
     padding: 0 20px;
     height: 45px;
-    flex-shrink: 0; /* prevents button from shrinking text */
+    flex-shrink: 0; 
 }
 
-
-/* BUTTON stays small on resize — input stays big */
 @media (max-width: 768px) {
 
     .footer-subscribe {
         flex-direction: row;
     }
 
-    /* keep input wide, button small */
+    
     .footer-subscribe .form-control {
         width: 100%;
     }
@@ -222,16 +219,14 @@ h4 {
     text-align: right;
 }
 
-/* Align only the brand columns vertically */
 .brand-column ul {
     display: flex;
     flex-direction: column;
-    gap: 8px;          /* vertical spacing between links */
+    gap: 8px;          
     padding: 0;
-    margin-top: 28px;  /* optional if you want spacing from top */
+    margin-top: 28px;  
 }
 
-/* All links share the same style */
 .brand-column ul li a,
 .shop-links ul li a,
 .quick-links ul li a,
@@ -244,14 +239,13 @@ h4 {
     color: #151515;
 }
 
-/* Keep Shop By Brand and Quick Links independent */
 .shop-links ul,
 .quick-links ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 0;
-    margin-top: 0; /* no extra spacing */
+    margin-top: 0; 
 }
 
 .bottom-footer {
@@ -266,13 +260,13 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 180px;
+    margin-top: 168px;
 }
 
 .heading {
     display: flex;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
 }
 
 .heading p {
