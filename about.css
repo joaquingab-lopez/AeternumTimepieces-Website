@@ -1,0 +1,255 @@
+
+
+body::before {
+  color: red;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+.box {
+  background-color: lightblue;
+  border: 1px solid blue;
+  min-height: 50px;
+  font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar-brand img {
+    width: 272px;
+    height: 37px;
+    top: 21px;
+    left: 98px;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+.navbar-nav .nav-link img {
+    transition: opacity 0.3s ease; /* smooth transition */
+}
+
+.navbar-nav .nav-link:hover img {
+    opacity: 0.7; /* semi-transparent on hover */
+}
+
+.nav-item {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2px;
+    color: #fbfbfe;
+}
+
+a:link {
+    color:#fbfbfe;
+}
+
+section {
+    position: relative; /* Needed for positioning the pseudo-element */
+    width: 100%;
+    min-height: 100vh;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Graphics/pane.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:brightness(30%); /* Adjust this value (0 to 1) for desired transparency */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    background-color: #FBFBFE;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer-subscribe {
+    display: flex;
+    width: 300px; /* total width */
+}
+
+.footer-subscribe .form-control {
+    flex: 1;          /* take remaining space */
+    height: 23px;     /* updated height */
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;  /* optional, scale font for small height */
+    padding: 0 8px;
+}
+
+.footer-subscribe .submit-btn {
+    width: 90px;      /* fixed button width */
+    height: 23px;     /* updated height */
+    border: none;
+    border-radius: 0;
+    background: #151515;
+    color: #FBFBFE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;  /* optional */
+    flex-shrink: 0;   /* prevents shrinking */
+}
+
+/* BUTTON — rectangle, fixed height */
+.submit-btn {
+    background: #151515 !important;
+    color: #FBFBFE !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    height: 45px;
+    flex-shrink: 0; /* prevents button from shrinking text */
+}
+
+
+/* BUTTON stays small on resize — input stays big */
+@media (max-width: 768px) {
+
+    .footer-subscribe {
+        flex-direction: row;
+    }
+
+    /* keep input wide, button small */
+    .footer-subscribe .form-control {
+        width: 100%;
+    }
+
+    .footer-subscribe .subscribe-btn {
+        width: auto;
+    }
+}
+
+.col img {
+    width: 272px;
+    height: 33px;
+    top: 37px;
+    left: 97px;
+}
+
+.col p {
+    width: 300px;
+    height: 32px;
+    top: 90px;
+    left: 97px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-row p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+}
+
+.payment-row img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.bottom-footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+}
+
+
+h4 {
+    color: #151515;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+.list-unstyled {
+    color: #151515;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+/* Align only the brand columns vertically */
+.brand-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;          /* vertical spacing between links */
+    padding: 0;
+    margin-top: 28px;  /* optional if you want spacing from top */
+}
+
+/* All links share the same style */
+.brand-column ul li a,
+.shop-links ul li a,
+.quick-links ul li a,
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #151515;
+}
+
+/* Keep Shop By Brand and Quick Links independent */
+.shop-links ul,
+.quick-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin-top: 0; /* no extra spacing */
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBFBFE;
+}
