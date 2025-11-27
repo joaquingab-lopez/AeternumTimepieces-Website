@@ -10,11 +10,11 @@ html {
 
 #to-top { 
     position: fixed; 
-    bottom: 30px; 
-    right: 30px; 
-    width: 40px; 
-    height: 40px; 
-    font-size: 30px; 
+    bottom: 5px; 
+    right: 5px; 
+    width: 35px; 
+    height: 35px; 
+    font-size: 5px; 
     background-color: #fbfbfe; 
     border-radius: 6px; 
     display: flex; 
@@ -23,7 +23,7 @@ html {
     transform: scale(0); 
     transition: bottom 200ms, transform 200ms; 
     z-index: 9999; 
-    /*mix-blend-mode: difference; */
+    mix-blend-mode: difference;
 }
 
 #to-top img {
@@ -34,7 +34,7 @@ html {
 }
 
 #to-top:hover {
-    bottom: 35px;
+    bottom: 10px;
 }
 
 #to-top.show {
