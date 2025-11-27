@@ -88,3 +88,243 @@
     object-fit: cover;
     filter: brightness(60%);
   }
+/*Header and Footer*/
+.navbar-brand img {
+    width: 272px;
+    height: 37px;
+    top: 21px;
+    left: 98px;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+.navbar-nav .nav-link img {
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover img {
+    opacity: 0.7;
+}
+
+.nav-item {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #fbfbfe;
+}
+
+a:link {
+    color:#fbfbfe;
+}
+
+section {
+    position: relative; 
+    width: 100%;
+    min-height: 100vh;
+    height: auto; 
+    padding-bottom: 120px;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Graphics/pane.png);
+    background-size: cover;
+    min-height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:brightness(30%); 
+    z-index: -1; 
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    width: 100%;
+    background-color: #FBFBFE;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer-subscribe {
+    display: flex;
+    width: 300px; 
+}
+
+.footer-subscribe .form-control {
+    flex: 1;          
+    height: 23px;    
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px; 
+    padding: 0 8px;
+    font-style: normal;
+}
+
+.footer-subscribe .submit-btn {
+    width: 90px;     
+    height: 23px;     
+    border: none;
+    border-radius: 0;
+    background: #151515;
+    color: #FBFBFE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;  
+    flex-shrink: 0;   
+    font-style: normal;
+}
+
+.submit-btn {
+    background: #151515 !important;
+    color: #FBFBFE !important;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    height: 45px;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 768px) {
+
+    .footer-subscribe {
+        flex-direction: row;
+    }
+
+    
+    .footer-subscribe .form-control {
+        width: 100%;
+    }
+
+    .footer-subscribe .subscribe-btn {
+        width: auto;
+    }
+}
+
+.col img {
+    width: 272px;
+    height: 33px;
+    top: 37px;
+    left: 97px;
+}
+
+.col p {
+    width: 300px;
+    height: 32px;
+    top: 90px;
+    left: 97px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-row p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+}
+
+.payment-row img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.bottom-footer p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #151515;
+}
+
+
+h4 {
+    color: #151515;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+.list-unstyled {
+    color: #151515;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+.brand-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;          
+    padding: 0;
+    margin-top: 28px;  
+}
+
+.brand-column ul li a,
+.shop-links ul li a,
+.quick-links ul li a,
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #151515;
+}
+
+.shop-links ul,
+.quick-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin-top: 0; 
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBFBFE;
+}
