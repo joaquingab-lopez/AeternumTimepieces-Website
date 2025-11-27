@@ -1,82 +1,5 @@
-
-
-body::before {
-  color: red;
-  font-size: 2rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-  background-color: lightblue;
-  border: 1px solid blue;
-  min-height: 50px;
-  font-size: 2rem;
-}
-
-
-.navbar-brand img {
-    width: 272px;
-    height: 37px;
-    top: 21px;
-    left: 98px;
-}
-
-img {
-    vertical-align: baseline;
-}
-
-.navbar-nav .nav-link img {
-    transition: opacity 0.3s ease; 
-}
-
-.navbar-nav .nav-link:hover img {
-    opacity: 0.7;
-}
-
-.nav-item {
-    display: flex;
-    padding: 25px;
-    justify-content: space-between;
-}
-
-.nav-link {
-    font-family: Oswald;
-    font-size: 20px;
-    font-style: normal;
-    line-height: 100%;
-    letter-spacing: 1px;
-    color: #fbfbfe;
-}
-
-a:link {
-    color:#fbfbfe;
-}
-
-section {
-    position: relative; 
-    width: 100%;
-    min-height: 100vh;
-    height: auto; 
-    padding-bottom: 120px;
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(Graphics/pane.png);
-    background-size: cover;
-    min-height: inherit;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter:brightness(30%); 
-    z-index: -1; 
+footer * {
+    letter-spacing: 0.1em;
 }
 
 footer {
@@ -101,6 +24,7 @@ footer {
     border: none;
     outline: none;
     font-family: Montserrat;
+    letter-spacing: normal;
     font-size: 13px; 
     padding: 0 8px;
     font-style: normal;
@@ -114,6 +38,7 @@ footer {
     background: #151515;
     color: #FBFBFE;
     font-family: Montserrat;
+    letter-spacing: normal;
     font-size: 13px;  
     flex-shrink: 0;   
     font-style: normal;
@@ -202,7 +127,7 @@ footer {
 }
 
 
-h4 {
+.col h4 {
     color: #151515;
     font-family: Oswald;
     font-style: normal;
@@ -256,51 +181,3 @@ h4 {
     justify-content: space-between;
     background-color: #FBFBFE;
 }
-
-.container-sm {
-    width: 825px;
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*margin-top: 168px;*/
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.heading {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.heading p {
-    font-family: Oswald;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 2.6;
-    letter-spacing: 0.07em;
-    color: #FBFBFE;
-    font-style: normal;
-}
-
-.about {
-    /*width: 825px;
-    height: 264px;*/
-    width: 100%;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
-    text-align: justify;
-}
-
-.about p{
-    /*text-align: justify;*/
-    font-family: Montserrat;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
-    color: #FBFBFE;
-}
-
