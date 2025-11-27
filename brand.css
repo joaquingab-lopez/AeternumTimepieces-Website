@@ -44,7 +44,7 @@
     height: 100%;
   }
 
-  .card-body a{
+  .card-body a:link { 
     color:#384556;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
@@ -54,7 +54,6 @@
   }
 
   .card-body a:hover{
-    color:#384556;
     text-decoration: underline; 
   }
   .card-text{
