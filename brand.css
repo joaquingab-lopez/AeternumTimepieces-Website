@@ -31,20 +31,22 @@
   transition: .75s ease;
   }
   /**/
-  .card:hover .overlay{
+  .card-body:hover .overlay{
     bottom: 0;
     height: 100%;
   }
+
   .card-body a{
+    color:#384556;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    color:#384556;
     letter-spacing: 10%;
     font-weight: 400
 
   }
 
   .card-body a:hover{
+    color:#384556;
     text-decoration: underline; 
   }
   .card-text{
