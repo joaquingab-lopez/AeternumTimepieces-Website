@@ -117,7 +117,7 @@ footer {
     font-style: normal;
 }
 
-.footer-email button {
+.footer-email button.submit {
     width: 95px;     
     height: 23px;     
     border: none;
@@ -131,29 +131,15 @@ footer {
     transition: background 0.2s ease;
 }
 
-/*.footer-subscribe .submit-btn {
-    width: 90px;     
-    height: 23px;     
-    border: none;
-    border-radius: 0;
-    background: #151515;
-    color: #FBFBFE;
-    font-family: Montserrat;
-    font-size: 13px;  
-    flex-shrink: 0;   
-    font-style: normal;
-    transition: background 0.2s ease;
-}*/
-
-.footer-email button:hover {
+.footer-email button.submit:hover {
     background: #99927F; 
 }
 
-.footer-email button:active {
+.footer-email button.submit:active {
     background: #99927F; 
 }
 
-button {
+button.submit {
     background: #151515;
     color: #FBFBFE ;
     font-family: Montserrat;
@@ -178,7 +164,7 @@ button {
         width: 100%;
     }
 
-    .footer-email button {
+    .footer-email button.submit {
         width: auto;
     }
 }
