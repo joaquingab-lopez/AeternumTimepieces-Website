@@ -1,0 +1,67 @@
+.container {
+  max-width: 960px;
+}
+body{
+  background-color: #FBFBFE;
+}
+
+h1{
+    font-family: Oswald;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+h2{
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 400;
+}
+h3{
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+}
+h4{
+    font-family: Montserrat;
+    font-size: 25px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+h5{
+    font-family: Montserrat;
+    font-size: 16px;
+}
+h6{
+    font-family: Montserrat;
+    font-size: 16px;
+}
+p{
+  font-family: Montserrat;
+  font-size: 20px;
+}
+.c-text{
+  color: #384556 !important;
+}
+.p-text{
+  color: #FBFBFE;
+}
+.custom{
+  background-color: #384556 !important;
+}
+.form-check-input:checked{
+  background-color: #99927F;
+  border-color: #99927F;
+}
+.c-btn{
+  background-color: #384556;
+  border-color: #384556;
+}
+.c-btn:hover{
+  background-color: #99927F;
+  border-color: #99927F;
+}
+.brandcartier img{
+  filter: brightness(70%);
+}

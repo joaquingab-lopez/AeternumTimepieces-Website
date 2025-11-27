@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <link rel="icon" type="image/x-icon" href="Graphics/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Astro v5.13.2" />
+    <title>Checkout</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/checkout/"
+    />
+    <script src="assets/js/color-modes.js"></script>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel = "stylesheet" href= "navbar.css">
+    <link rel = "stylesheet" href= "footer.css">
+    <link rel="stylesheet" href="back-to-top.css">
+    <script src="back-to-top.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    
+    <meta name="theme-color" content="#712cf9" />
+    <link href="checkout.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <div class="brandcartier">
+        <img src="Graphics/checkout.jpg" class="img-fluid" alt="header" width="110%">
+    </div>
+    <!--Navigation Bar/ Header-->
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class = "container-lg">
+                <a href="Home.html" class="navbar-brand"><img src="Graphics/brands/logow.png" alt="Logo"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="checkout.html" class="nav-link" aria-current="page"><img src="Graphics/shopping-bag-white.svg" height="20px"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!--End of Nav Bar-->
+
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <h1 class="c-text">CHECKOUT</h1>
+          <p class="lead">
+            Time to send your new timepiece home
+          </p>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary c-text">Your cart</span>
+              <span class="badge custom rounded-pill p-text">1</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Santos De Cartier</h6>
+                  <small class="text-body-secondary">39 mm, steel</small>
+                </div>
+                <span class="text-body-secondary">$7,750</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between bg-body-tertiary"
+              >
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>POGIACHIM</small>
+                </div>
+                <span class="text-success">−$100</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span> <strong>$7,650</strong>
+              </li>
+            </ul>
+            <form class="card p-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Promo code"
+                />
+                <button type="submit" class="btn btn-secondary c-btn">Redeem</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3 c-text">Billing address</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label"
+                    >Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="1234 Main St"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="address2" class="form-label"
+                    >Address 2
+                    <span class="text-body-secondary">(Optional)</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Apartment or suite"
+                  />
+                </div>
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Province</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>Benguet</option>
+                    <option>Cebu</option>
+                    <option>Metro Manila</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid province.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="state" class="form-label">City</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Choose...</option>
+                    <option>Baguio City</option>
+                    <option>Cebu City</option>
+                    <option>Makati City</option>
+                    <option>Quezon City</option>
+                    <option>Taguig City</option>
+                    <option></option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">Zip code required.</div>
+                </div>
+              </div>
+              <hr class="my-4" />
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="same-address"
+                />
+                <label class="form-check-label" for="same-address"
+                  >Shipping address is the same as my billing address</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="save-info"
+                />
+                <label class="form-check-label" for="save-info"
+                  >Save this information for next time</label
+                >
+              </div>
+              <hr class="my-4" />
+              <h4 class="mb-3 c-text">Payment</h4>
+              <div class="my-3">
+                <div class="form-check">
+                  <input
+                    id="credit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="credit"
+                    >Credit card</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="debit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    required
+                  />
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+              </div>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-name"
+                    placeholder=""
+                    required
+                  />
+                  <small class="text-body-secondary"
+                    >Full name as displayed on card</small
+                  >
+                  <div class="invalid-feedback">Name on card is required</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label"
+                    >Credit card number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-number"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label"
+                    >Expiration</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-expiration"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">Expiration date required</div>
+                </div>
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-cvv"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">Security code required</div>
+                </div>
+              </div>
+              <hr class="my-4" />
+              <button class="w-100 btn btn-primary btn-lg c-btn" type="submit">
+                Continue to checkout
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col col-lg-4">
+                    <img src="Graphics/brands/logob.png">
+                    <br>
+                    <p>Get exclusive offers and have first access to new releases!</p>
+                    <br>
+                    <div class="footer-subscribe" style="width: 300px;">
+                        <input type="email" class="form-control" placeholder="Enter Email" aria-label="Email address">
+                        <button class="btn submit-btn" type="button">SUBMIT</button>
+                    </div>
+                </div>
+                <div class="col col-lg-2 brand-column">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Cartier</a></li>
+                        <li><a href="#" class="text">Patek Philippe</a></li>   
+                        <li><a href="#" class="text">Audemars Piguet</a></li>                                                           
+                    </ul>
+                </div>
+                <div class="col col-lg-2 brand-column">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Tudor</a></li>                     
+                        <li><a href="#" class="text">Tag Heuer</a></li>                     
+                        <li><a href="#" class="text">Tissot</a></li>                      
+                    </ul>
+                </div>
+                <div class="col col-lg-2 shop-links">
+                    <h4>SHOP BY BRAND</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Casio</a></li>                     
+                        <li><a href="#" class="text">Seiko</a></li>                     
+                        <li><a href="#" class="text">Timex</a></li>                     
+                    </ul>
+                </div>
+                <div class="col col-lg-2 quick-links">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text">About</a></li>
+                        <li><a href="checkout.html" class="text">Shopping Bag</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="bottom-footer">
+                <div class="payment-row">
+                        <p>Payment Methods</p>
+                        <img src="Graphics/visa.png" height="50px" width="50px">
+                        <img src="Graphics/card.png" heigh="50px" width="31px">
+                        <img src="Graphics/amex.png" height="50px" width="50px">
+                </div>
+                <p>Copyright © 2025 Aeternum Timepieces</p>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to Top-->
+    <a href="#">
+        <div id="to-top">
+            <img src="Graphics/arrow-up.svg">
+        </div>
+    </a>
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+    <script src="checkout.js" class="astro-vvvwv3sm"></script>
+  </body>
+</html>
