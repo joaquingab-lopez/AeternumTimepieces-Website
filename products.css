@@ -101,4 +101,7 @@ body {
     font-family: "Oswald", sans-serif ;
     padding: 5px;
   }
+  .add:hover{
+    background-color: #384556;
+  }
 
