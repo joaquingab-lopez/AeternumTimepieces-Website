@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="products.css" rel="stylesheet">
+    <link rel = "stylesheet" href= "navbar.css">
+    <link rel = "stylesheet" href= "footer.css">
+    <link rel="stylesheet" href="back-to-top.css">
+    <script src="back-to-top.js"></script>
+    <title>Home</title>
+
+</head>
+<body>
+    <!--Navigation Bar/ Header-->
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class = "container-lg">
+                <a href="Home.html" class="navbar-brand"><img src="Graphics/brands/logow.png" alt="Logo"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="brand.html" class="nav-link">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" aria-current="page">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="checkout.html" class="nav-link"><img src="Graphics/shopping-bag-white.svg" height="20px"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!--End of Nav Bar-->
+    
+    <!--Main-->
+
+
+    <!--Top-->
+    <div class="brandcartier">
+        <img src="Graphics/Watches/4.png" class="img-fluid" alt="header" width="110%">
+        <div class="brand"> CARTIER </div>
+    </div>
+    <!--End of Top-->
+
+    <!--Showcase-->
+    <div class="main">
+        <div class="images">
+            <div class="img1"><img src="Graphics/Watches/9.png" alt="BBDC1"></div>
+            <div class="img2"><img src="Graphics/Watches/10.png" alt="BBDC2"></div>
+            <div class="img3"><img src="Graphics/Watches/8.png" alt="BBDC3"></div>
+        </div>
+        <div class="details">
+            <h3>Ballon Bleu de Cartier</h3>
+            <p class="price">39mm, steel</h4>
+            <p class="price">$7,950</h4>
+            <p class="desc">With the Ballon Bleu watch, Cartier offers a singular vision of roundness, all curves and harmony. A timeless watchmaking icon whose roundness elegantly embraces the skin. </p>
+            <button class="add" onclick="addToCart('Ballon Bleu de Cartier', 7950)">ADD TO BAG</button>  
+        </div>
+    </div>
+
+    <!--End of Showcase-->
+
+
+    <!--End of Main-->
+   
+
+    <!--Footer-->
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col col-lg-4">
+                    <img src="Graphics/brands/logob.png">
+                    <br>
+                    <p>Get exclusive offers and have first access to new releases!</p>
+                    <br>
+                    <div class="footer-subscribe" style="width: 300px;">
+                        <input type="email" class="form-control" placeholder="Enter Email" aria-label="Email address">
+                        <button class="btn submit-btn" type="button">SUBMIT</button>
+                    </div>
+                </div>
+                <div class="col col-lg-2 brand-column">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Cartier</a></li>
+                        <li><a href="#" class="text">Patek Philippe</a></li>   
+                        <li><a href="#" class="text">Audemars Piguet</a></li>                                                           
+                    </ul>
+                </div>
+                <div class="col col-lg-2 brand-column">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Tudor</a></li>                     
+                        <li><a href="#" class="text">Tag Heuer</a></li>                     
+                        <li><a href="#" class="text">Tissot</a></li>                      
+                    </ul>
+                </div>
+                <div class="col col-lg-2 shop-links">
+                    <h4>SHOP BY BRAND</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Casio</a></li>                     
+                        <li><a href="#" class="text">Seiko</a></li>                     
+                        <li><a href="#" class="text">Timex</a></li>                     
+                    </ul>
+                </div>
+                <div class="col col-lg-2 quick-links">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text">Shop</a></li>                     
+                        <li><a href="#" class="text">About</a></li>                     
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="bottom-footer">
+                <div class="payment-row">
+                        <p>Payment Methods</p>
+                        <img src="Graphics/visa.png" height="50px" width="50px">
+                        <img src="Graphics/card.png" heigh="50px" width="31px">
+                        <img src="Graphics/amex.png" height="50px" width="50px">
+                </div>
+                <p>Copyright © 2025 Aeternum Timepieces</p>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Back to Top-->
+    <a href="#">
+        <div id="to-top">
+            <img src="Graphics/arrow-up.svg">
+        </div>
+    </a>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

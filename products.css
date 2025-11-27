@@ -1,0 +1,104 @@
+body {
+    font-family: "Oswald", sans-serif;
+  }
+
+.brandcartier{
+    position:relative;
+    background-color: black;
+    height: 350px;
+   }
+
+  .brandcartier img {
+    padding: 0px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 60% ;
+    opacity: 0.3;
+
+  }
+
+  
+  .brand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    color:#FBFBFE;
+    letter-spacing: 10%;
+    font-size: 45px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 5%;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid;
+    object-fit: cover;
+  }
+
+  .img1 {
+    grid-area: 1/1/2/2;
+  }
+
+   .img2 {
+    grid-area: 2/1/3/2;
+  }
+
+   .img3 {
+    grid-area: 1/2/3/4;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 8%;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .price {
+    color: #99927F;
+    font-weight: 500;
+    font-size: 20px;
+  }  
+
+  .desc {
+    font-size: 25px;
+  }
+
+  .add {
+    background-color: #99927F;
+    width: 400px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif ;
+    padding: 5px;
+  }
+
