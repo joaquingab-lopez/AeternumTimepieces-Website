@@ -69,7 +69,7 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../Graphics/pane.png);
+    background: url(Graphics/pane.png);
     background-size: cover;
     min-height: inherit;
     background-position: center;
