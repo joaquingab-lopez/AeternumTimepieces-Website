@@ -7,7 +7,6 @@
     background: transparent; /* optional: see-through */
 }
 
-
 .navbar-brand img {
     width: 272px;
     height: 37px;
@@ -42,4 +41,8 @@ img {
 
 a:link {
     color:#fbfbfe;
+}
+
+.navbar-nav li:hover {
+    text-decoration: none;
 }

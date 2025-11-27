@@ -38,7 +38,7 @@ img {
 
 .nav-item {
     display: flex;
-    padding: 25px;
+    padding: 15px 25px;
     justify-content: space-between;
 }
 
