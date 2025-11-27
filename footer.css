@@ -161,7 +161,7 @@ footer {
 .text {
     font-family: Montserrat;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
     color: #151515;
@@ -180,4 +180,8 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #FBFBFE;
+}
+.text:hover{
+    text-decoration: underline;
+    color: #151515;
 }
