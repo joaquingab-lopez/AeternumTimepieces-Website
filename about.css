@@ -105,7 +105,8 @@ footer {
     width: 300px; 
 }
 
-.footer-subscribe .form-control {
+
+.footer-email input {
     flex: 1;          
     height: 23px;    
     border: none;
@@ -116,7 +117,21 @@ footer {
     font-style: normal;
 }
 
-.footer-subscribe .submit-btn {
+.footer-email button {
+    width: 95px;     
+    height: 23px;     
+    border: none;
+    border-radius: 0;
+    background: #151515;
+    color: #FBFBFE;
+    font-family: Montserrat;
+    font-size: 13px;  
+    flex-shrink: 0;   
+    font-style: normal;
+    transition: background 0.2s ease;
+}
+
+/*.footer-subscribe .submit-btn {
     width: 90px;     
     height: 23px;     
     border: none;
@@ -127,11 +142,20 @@ footer {
     font-size: 13px;  
     flex-shrink: 0;   
     font-style: normal;
+    transition: background 0.2s ease;
+}*/
+
+.footer-email button:hover {
+    background: #99927F; 
 }
 
-.submit-btn {
-    background: #151515 !important;
-    color: #FBFBFE !important;
+.footer-email button:active {
+    background: #99927F; 
+}
+
+button {
+    background: #151515;
+    color: #FBFBFE ;
     font-family: Montserrat;
     font-style: normal;
     font-size: 13px;
@@ -140,6 +164,7 @@ footer {
     padding: 0 20px;
     height: 45px;
     flex-shrink: 0; 
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -149,11 +174,11 @@ footer {
     }
 
     
-    .footer-subscribe .form-control {
+    .footer-email input {
         width: 100%;
     }
 
-    .footer-subscribe .subscribe-btn {
+    .footer-email button {
         width: auto;
     }
 }
