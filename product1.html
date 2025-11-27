@@ -10,6 +10,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="products.css" rel="stylesheet">
     <link rel = "stylesheet" href= "navbar.css">
     <link rel = "stylesheet" href= "footer.css">
@@ -31,7 +32,10 @@
                         <a href="about.html" class="nav-link" aria-current="page">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="checkout.html" class="nav-link"><img src="Graphics/shopping-bag-white.svg" height="20px"></a>
+                        <a href="checkout.html" class="nav-link">
+                            <i class="bi bi-bag"></i>
+                            <span id="cart-count" class="cart-badge">0</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +64,7 @@
             <p class="price">39mm, steel</h4>
             <p class="price">$7,750</h4>
             <p class="desc">1904, Louis Cartier granted the wish of the Brazilian aviator Alberto Santos Dumont: to be able to tell time while flying. The birth of one of the first ever wristwatches sealed the bonds of friendship between these two pioneers. The rounded angles of the dial, the seamless curve of the horns, and the exposed screws made for an iconic watch that would inspire countless reinterpretations.</p>
-            <button class="add" onclick="addToCart('Santos De Cartier', '39mm, steel', 7750)">ADD TO BAG</button>  
+            <button class="add" onclick="addToCart('Santos De Cartier', 7750)">ADD TO BAG</button>  
         </div>
     </div>
 

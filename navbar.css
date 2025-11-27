@@ -1,10 +1,10 @@
 .navbar {
-    position: absolute;  /* floats over the carousel */
+    position: absolute;  
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;         /* ensures it’s on top */
-    background: transparent; /* optional: see-through */
+    z-index: 10;         
+    background: transparent; 
 }
 
 .navbar-brand img {
@@ -12,12 +12,35 @@
     height: 37px;
 }
 
-img {
+.nav-item .nav-link {
+    display: flex;
+    align-items: center; 
+    font-size: 18px; 
+    position: relative;
+}
+
+.nav-link i {
+    font-size: 17px;
     vertical-align: baseline;
 }
 
-.navbar-nav .nav-link img {
-    transition: opacity 0.3s ease; 
+.cart-badge {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: #99927F;
+    color: white;
+    font-size: 8px;   
+    padding: 2px 5px; 
+    border-radius: 50%; 
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;         
+    font-weight: bold; 
+    text-align: center;
 }
 
 .navbar-nav .nav-link:hover img {

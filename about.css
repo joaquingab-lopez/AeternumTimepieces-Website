@@ -1,22 +1,5 @@
 
 
-body::before {
-  color: red;
-  font-size: 2rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-  background-color: lightblue;
-  border: 1px solid blue;
-  min-height: 50px;
-  font-size: 2rem;
-}
-
-
 .navbar-brand img {
     width: 272px;
     height: 37px;
@@ -24,13 +7,37 @@ body::before {
     left: 98px;
 }
 
-img {
+.nav-item .nav-link {
+    display: flex;
+    align-items: center; 
+    font-size: 18px; 
+    position: relative;
+}
+
+.nav-link i {
+    font-size: 17px;
     vertical-align: baseline;
 }
 
-.navbar-nav .nav-link img {
-    transition: opacity 0.3s ease; 
+.cart-badge {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: #99927F;
+    color: white;
+    font-size: 8px;   
+    padding: 2px 5px; 
+    border-radius: 50%; 
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;         
+    font-weight: bold; 
+    text-align: center;
 }
+
 
 .navbar-nav .nav-link:hover img {
     opacity: 0.7;
@@ -54,6 +61,7 @@ img {
 a:link {
     color:#fbfbfe;
 }
+
 
 section {
     position: relative; 

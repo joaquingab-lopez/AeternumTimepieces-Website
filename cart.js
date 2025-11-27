@@ -1,14 +1,20 @@
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-
 function addToCart(name, details, price) {
-    cart.push({ name: name, details: details, price: price });
-
-   
+    cart.push({ name, details, price });
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    updateCart();
+    updateCart();      
+    updateNavbarCart(); 
+}
+
+function updateNavbarCart() {
+    const cartNumNav = document.getElementById("cart-count");
+    if (!cartNumNav) return;
+
+    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    cartNumNav.textContent = storedCart.length;
 }
 
 
@@ -16,6 +22,7 @@ function updateCart() {
     const cartItems = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
     const cartNum = document.getElementById("cart-number");
+    const cartNav = document.getElementById("cart-count");
 
    
     if (!cartItems || !cartTotal) return;
@@ -42,6 +49,7 @@ function updateCart() {
 
     cartTotal.textContent = `$${total}`;
     cartNum.textContent = `${items}` ;
+    cartNav.textContent =  `${items}` ;
 }
 
 function clearCart() {
@@ -50,5 +58,13 @@ function clearCart() {
     updateCart();                       
 }
 
-window.onload = updateCart;
+/*window.onload = updateCart;*/
+
+window.addEventListener("DOMContentLoaded", () => {
+    // Always read latest cart from localStorage
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    updateCart();       // update checkout page if present
+    updateNavbarCart(); // update navbar badge
+});
 
