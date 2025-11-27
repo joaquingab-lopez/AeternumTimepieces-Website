@@ -1,0 +1,45 @@
+.navbar {
+    position: absolute;  /* floats over the carousel */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;         /* ensures it’s on top */
+    background: transparent; /* optional: see-through */
+}
+
+
+.navbar-brand img {
+    width: 272px;
+    height: 37px;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+.navbar-nav .nav-link img {
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover img {
+    opacity: 0.7;
+}
+
+.nav-item {
+    display: flex;
+    padding: 15px 25px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #fbfbfe;
+}
+
+a:link {
+    color:#fbfbfe;
+}

@@ -49,8 +49,11 @@ h6{
     object-fit: cover;
     filter: brightness(70%);
 }
+
+
 .carousel-caption{
     margin-bottom: 30px;
+    top: 20%;
 }
 .btn-primary{
     background-color: transparent;
