@@ -58,6 +58,10 @@ function clearCart() {
     updateCart();                       
 }
 
+function addedToCart() {
+  alert("Item Added to Cart!");
+}
+
 /*window.onload = updateCart;*/
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -67,4 +71,5 @@ window.addEventListener("DOMContentLoaded", () => {
     updateCart();       // update checkout page if present
     updateNavbarCart(); // update navbar badge
 });
+
 
