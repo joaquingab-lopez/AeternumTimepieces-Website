@@ -148,18 +148,42 @@
       </div>
     </div>
   </div>
+
+  <!--Added to Cart Modal-->
+  <div class="modal fade" tabindex="-1" id="addcart-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">1 item added to your bag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Subtotal 1 item | $7,750</p>
+        </div>
+        <div class="modal-footer">
+          <a href="checkout.html">View Cart</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
     
     <!--Main-->
 
 
     <!--Top-->
     <div class="brandcartier">
-        <img src="Graphics/Watches/4.png" class="img-fluid" alt="header" width="110%">
+        <img src="Graphics/santos1.jpg" class="img-fluid" alt="header" width="110%">
         <div class="brand"> CARTIER </div>
     </div>
     <!--End of Top-->
 
     <!--Showcase-->
+    <div class="back">
+      <a href="brand.html">&lt Back to Cartier Watches</a>
+    </div>
     <div class="main">
         <div class="images">
             <div class="img1"><img src="Graphics/Watches/3.png" alt="SDC1"></div>
@@ -171,7 +195,7 @@
             <p class="price">39mm, steel</h4>
             <p class="price">$7,750</h4>
             <p class="desc">1904, Louis Cartier granted the wish of the Brazilian aviator Alberto Santos Dumont: to be able to tell time while flying. The birth of one of the first ever wristwatches sealed the bonds of friendship between these two pioneers. The rounded angles of the dial, the seamless curve of the horns, and the exposed screws made for an iconic watch that would inspire countless reinterpretations.</p>
-            <button class="add" onclick="addToCart('Santos De Cartier', '39mm, steel', 7750)">ADD TO BAG</button>  
+            <button class="add" onclick="addToCart('Santos De Cartier', '39mm, steel', 7750)" data-bs-toggle="modal" data-bs-target="#addcart-modal">ADD TO BAG</button>  
         </div>
     </div>
 
@@ -186,7 +210,7 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col col-lg-4">
-                    <img src="Graphics/brands/logob.png">
+                    <a href="Home.html"><img src="Graphics/brands/logob.png"></a>
                     <br>
                     <p>Get exclusive offers and have first access to new releases!</p>
                     <br>

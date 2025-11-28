@@ -64,6 +64,8 @@ p{
 }
 .brandcartier img{
   filter: brightness(70%);
+  height: 350px;
+  object-fit: cover;
 }
 .container{
   margin-bottom: 30px;

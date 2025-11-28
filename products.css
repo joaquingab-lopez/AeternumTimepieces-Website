@@ -131,3 +131,41 @@ body {
 .m-text{
     color: #99927F;
 }
+.modal-footer a{
+  text-decoration: none;
+  color: white;
+  background-color: #99927F;
+  padding: 7px 50px;
+  border-radius: 5px;
+}
+.modal-footer a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #384556;
+  padding: 7px 50px;
+  border-radius: 5px;
+}
+.modal-footer button{
+  background-color: white;
+  border-color: #99927F;
+  color: #99927F;
+}
+.modal-footer button:hover{
+  background-color: #384556;
+  border-color: #384556;
+  color: white;
+}
+.back{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.back a{
+  text-decoration: none;
+  color: #384556;
+  font-size: 20px;
+}
+.back a:hover{
+  text-decoration: underline;
+  color: #99927F;
+  font-size: 20px;
+}

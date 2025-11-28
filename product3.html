@@ -148,18 +148,40 @@
       </div>
     </div>
   </div>
+
+  <!--Added to Cart Modal-->
+  <div class="modal fade" tabindex="-1" id="addcart-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">1 item added to your bag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Subtotal 1 item | $7,950</p>
+        </div>
+        <div class="modal-footer">
+          <a href="checkout.html">View Cart</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <!--Main-->
 
 
     <!--Top-->
     <div class="brandcartier">
-        <img src="Graphics/Watches/4.png" class="img-fluid" alt="header" width="110%">
+        <img src="Graphics/santos1.jpg" class="img-fluid" alt="header" width="110%">
         <div class="brand"> CARTIER </div>
     </div>
     <!--End of Top-->
 
     <!--Showcase-->
+    <div class="back">
+      <a href="brand.html">&lt Back to Cartier Watches</a>
+    </div>
     <div class="main">
         <div class="images">
             <div class="img1"><img src="Graphics/Watches/9.png" alt="BBDC1"></div>
@@ -171,7 +193,7 @@
             <p class="price">39mm, steel</h4>
             <p class="price">$7,950</h4>
             <p class="desc">With the Ballon Bleu watch, Cartier offers a singular vision of roundness, all curves and harmony. A timeless watchmaking icon whose roundness elegantly embraces the skin. </p>
-            <button class="add" onclick="addToCart('Ballon Bleu de Cartier', '39mm, steel', 7950)">ADD TO BAG</button>  
+            <button class="add" onclick="addToCart('Ballon Bleu de Cartier', '39mm, steel', 7950)" data-bs-toggle="modal" data-bs-target="#addcart-modal">ADD TO BAG</button>  
         </div>
     </div>
 
@@ -186,7 +208,7 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col col-lg-4">
-                    <img src="Graphics/brands/logob.png">
+                    <a href="Home.html"><img src="Graphics/brands/logob.png"></a>
                     <br>
                     <p>Get exclusive offers and have first access to new releases!</p>
                     <br>

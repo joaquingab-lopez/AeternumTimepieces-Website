@@ -56,6 +56,7 @@
   .card-body a:hover{
     text-decoration: underline; 
   }
+
   .card-text{
     font-family: "Montserrat", sans-serif;
     letter-spacing: 10%;
@@ -63,16 +64,27 @@
 
   }
 
-  .list ul{
+  .list li{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     letter-spacing: 10%;
     color: #151515;
   }
 
-  .list ul:hover{
+  .list li:hover{
     text-decoration: underline;
-    text-align: left;  }
+    text-align: left;  
+  }
+
+  .list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.list li.sort-active {
+  color:#99927F;
+  cursor: pointer;
+}
 
   .container-fluid h1{
     letter-spacing: 10%;
@@ -121,4 +133,7 @@
 
 .m-text{
     color: #99927F;
+}
+.card-body a{
+  color: #384556;
 }
