@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="Graphics/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Collection</title>
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="Graphics/favicon.png">
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--Bootstrap Links-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--CSS Stylesheet-->
     <link href="home.css" rel="stylesheet">
+    <link href="brand.css" rel="stylesheet">
     <link rel = "stylesheet" href= "navbar.css">
     <link rel = "stylesheet" href= "footer.css">
-    <link rel="stylesheet" href="back-to-top.css">
-    <title>Home</title>
 
+    <!--JavaScript-->
+    <script src="back-to-top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+
+    <!--Custom CSS-->
+    <style>
+        .brandcartier{
+            height: 350px;
+        }
+        #legacycards{
+            margin-top: 0px;
+        }
+        .l-top p{
+            margin-left: 35px;
+        }
+    </style>
 </head>
 <body>
     <!--Navigation Bar/ Header-->
@@ -42,8 +65,7 @@
                 </ul>
             </div>
         </nav>
-    <!--End of Nav Bar-->
-
+    
     <!--Sign In-->
     <div class="modal fade" tabindex="-1" id="signin-modal">
     <div class="modal-dialog">
@@ -148,53 +170,9 @@
     </div>
   </div>
 
-    <!--Hero Carousel-->
-    <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-        <img src="Graphics/legacy.jpg" class="d-block w-100 c-img" alt="legacy">
-        <div class="carousel-caption">
-            <h1>THE LEGACY COLLECTION</h1>
-            <p>Iconic luxury watches made to be passed down for generations</p>
-            <a class="btn btn-primary" href="legacy.html" role="button">SHOP NOW</a>
-        </div>
-        </div>
-        <div class="carousel-item c-item">
-        <img src="Graphics/vanguard.jpg" class="d-block w-100 c-img" alt="vanguard">
-        <div class="carousel-caption">
-            <h1>THE VANGUARD COLLECTION</h1>
-            <p>Modern favorites that blend style, performance, and craftsmanship</p>
-            <a class="btn btn-primary" href="#" role="button">SHOP NOW</a>
-        </div>
-        </div>
-        <div class="carousel-item c-item">
-        <img src="Graphics/core.jpg" class="d-block w-100 c-img" alt="core">
-        <div class="carousel-caption">
-            <h1>THE CORE COLLECTION</h1>
-            <p>Timeless designs for life’s everyday moments</p>
-            <a class="btn btn-primary" href="#" role="button">SHOP NOW</a>
-        </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-
-    <!--Brands-->
+    <!--Legacy Brands-->
     <div class="container-fluid p-0" id="custom-cards">
-      <h1>BRANDS</h1>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="legacycards">
         <a href="brand.html">
           <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/santos1.jpg')">
@@ -223,89 +201,235 @@
           </div>
         </a>
       </div>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/t1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tudor</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/th1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tag Heuer</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/ts1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tissot</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/ca1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Casio</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/s1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Seiko</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Graphics/tx1.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Timex</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
     </div>
 
-    <!--Watch Spotlight-->
-    <div class="s-container">
-        <h2>WATCH SPOTLIGHT</h2>
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5">
-            <div class="col-12 col-md-7 s-text">
-                <a href="product1.html">
-                    <h3>Santos De Cartier</h3>
-                </a>
-                <p>
-                1904, Louis Cartier granted the wish of the famous Brazilian aviator Alberto Santos Dumont: 
-                to be able to tell time while flying. The birth of one of the first ever wristwatches sealed the bonds of 
-                friendship between these two pioneers. The rounded angles of the dial, the seamless curve of the horns, 
-                and the exposed screws made for an iconic watch that would inspire countless reinterpretations.
-                </p>
+    <div class="container-fluid py-3 l-top">
+        <h1 >SHOP THE LEGACY COLLECTION</h1>
+        <p>Aeternum's curated selection</p>
+     </div>
+
+    <!--Legacy Grid-->
+      <div class="container-fluid p-5">
+        <div class="row mt-3">
+          <div class="col-md-2">
+            <div class="row">
+              <div class="row-md-2"> </div>
+                <h3>SORT BY</h3>
+                <ul class="list">
+                    <li onclick="sortProducts('low')">Price Low to High</li>
+                    <li onclick="sortProducts('high')">Price High to Low</li>
+                    <li onclick="sortProducts('rec')">Recommended</li>
+                </ul>
             </div>
-            <div class="col-12 col-md-5 d-flex justify-content-center">
-                <video class="img-fluid" autoplay muted loop>
-                    <source src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibrary-BGTJ/default/plp/services/INSERT_common_santos-watch-engraving.mp4" type="video/mp4">
-                </video>
+          </div>
+
+          <div class="col-md-10">
+            <div id="product-row">
+            <div class="row mt-2">
+              <div class="col-md-4 product" data-price="7750" data-name="Santos De Cartier">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                    <img src="Graphics/Watches/2.png" class="card-img-top" alt=" Santos De Cartier">
+                    <div class="overlay">   
+                        <div class="img">  <img src="Graphics/Watches/3.png" class="card-img-top" alt=" Santos De Cartier">
+                        </div>   
+                               
+                    </div>
+                    
+                </div>
+                <div class="card-body">
+                    <a href="product1.html">
+                        Santos De Cartier
+                    </a>
+                    <p class="card-text">39mm, steel</p>
+                </div>
+                </div>
+              </div>
+                
+              
+
             </div>
+            
+
+            <div class="row mt-2">
+                <div class="col-md-4 product" data-price="33900" data-name="Santos De Cartier">
+                    <div class="card" style="width: 18 rem;">
+                        <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/11.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">  <img src="Graphics/Watches/12.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                        
+                    </div>
+
+                    <div class="card-body">
+                        <a href="product4.html"> Santos De Cartier </a>                       
+                        <p class="card-text">38mm, yellow gold</p>
+
+                    </div>
+                </div>
+                </div>
+                    
+                 
+                  
+                  
+    
+                  <div class="col-md-4 product" data-price="4300" data-name="Panthère de Cartier">
+                     <div class="card" style="width: 18 rem;">
+                        <div class="card" style="width: 100 rem;">
+                             <img src="Graphics/Watches/17.png" class="card-name" alt="...">
+                        <div class="overlay">   
+                            <div class="img">  <img src="Graphics/Watches/18.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="product6.html">  Pathere De Cartier </a>                       
+                            <p class="card-text">27mm, steel</p>
+                        </div>
+                       
+                    </div>
+                    
+                  </div> 
+                </div>
+        
+        <!--Start Row-->
+        <div class="row mt-2">
+            <!--Item-->
+            <div class="col-md-4 product" data-price="145100" data-name="Twenty-4">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/21.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/22.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Twenty-4</a>                       
+                        <p class="card-text">36mm, rose gold</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item-->
+            <div class="col-md-4 product" data-price="85000" data-name="Complications">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/24.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/25.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Complications</a>                       
+                        <p class="card-text">42mm, white gold</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item-->
+            <div class="col-md-4 product" data-price="79000" data-name="Aquanaut">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/30.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/31.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Aquanaut</a>                       
+                        <p class="card-text">40mm, rose gold</p>
+                    </div>
+                </div>
+            </div>        
         </div>
-    </div>
+        <!--End Row-->
 
+        <!--Start Row-->
+        <div class="row mt-2">
+            <!--Item-->
+            <div class="col-md-4 product" data-price="13000" data-name="Royal Oak">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/40.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/41.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Royal Oak</a>                       
+                        <p class="card-text">41mm, silver</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item-->
+            <div class="col-md-4 product" data-price="250" data-name="Royal Oak Jumbo">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/43.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/44.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Royal Oak Jumbo</a>                       
+                        <p class="card-text">39mm, titanium</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Item-->
+            <div class="col-md-4 product" data-price="59000" data-name="Code 11.59">
+                <div class="card" style="width: 18 rem;">
+                    <div class="card" style="width: 100 rem;">
+
+                        <img src="Graphics/Watches/46.png" class="card-img-top" alt="...">
+                        <div class="overlay">   
+                            <div class="img">
+                                <img src="Graphics/Watches/47.png" class="card-img-top" alt=" Santos De Cartier">
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#">Code 11.59</a>                       
+                        <p class="card-text">38mm, rose gold</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--End Row-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <!--Footer-->
     <footer>
         <div class="container-lg">
@@ -364,7 +488,6 @@
             </div>
         </div>
     </footer>
-    <!--End of Footer-->
 
     <!--Back to Top-->
     <a href="#">
@@ -372,9 +495,14 @@
             <img src="Graphics/arrow-up.svg">
         </div>
     </a>
+    </div> 
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="cart.js"></script>
-    <script src="back-to-top.js"></script>
-  </body>
+    <script src="brand.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>

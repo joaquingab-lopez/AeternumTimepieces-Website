@@ -14,8 +14,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: 20% 60% ;
-    opacity: 0.3;
-
+    filter: brightness(70%)
   }
 
   
