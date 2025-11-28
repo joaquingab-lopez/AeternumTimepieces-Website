@@ -131,3 +131,27 @@ body {
 .m-text{
     color: #99927F;
 }
+.modal-footer a{
+  text-decoration: none;
+  color: white;
+  background-color: #99927F;
+  padding: 7px 50px;
+  border-radius: 5px;
+}
+.modal-footer a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #384556;
+  padding: 7px 50px;
+  border-radius: 5px;
+}
+.modal-footer button{
+  background-color: white;
+  border-color: #99927F;
+  color: #99927F;
+}
+.modal-footer button:hover{
+  background-color: #384556;
+  border-color: #384556;
+  color: white;
+}

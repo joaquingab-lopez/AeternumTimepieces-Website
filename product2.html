@@ -148,13 +148,32 @@
       </div>
     </div>
   </div>
+
+  <!--Added to Cart Modal-->
+  <div class="modal fade" tabindex="-1" id="addcart-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">1 item added to your bag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Subtotal 1 item | $11,600</p>
+        </div>
+        <div class="modal-footer">
+          <a href="checkout.html">View Cart</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <!--Main-->
 
 
     <!--Top-->
     <div class="brandcartier">
-        <img src="Graphics/Watches/4.png" class="img-fluid" alt="header" width="110%">
+        <img src="Graphics/santos1.jpg" class="img-fluid" alt="header" width="110%">
         <div class="brand"> CARTIER </div>
     </div>
     <!--End of Top-->
@@ -171,7 +190,7 @@
             <p class="price">38mm, yellow gold</h4>
             <p class="price">$11,600</h4>
             <p class="desc">Designed by Louis Cartier in 1917, the Tank watch is an icon of modern watchmaking. The sleek design of this wristwatch, combining geometry with accurate proportions, defines its bold identity. Immediately recognizable and always in tune with the times, the Tank has been reinterpreted for over a century in a host of variations that remain faithful to the spirit of the original design: Tank Cintrée, Tank Chinoise, Tank Américaine, Tank Française...</p>
-            <button class="add" onclick="addToCart('Tank Louis Cartier', '38mm, yellow gold', 11600)">ADD TO BAG</button>  
+            <button class="add" onclick="addToCart('Tank Louis Cartier', '38mm, yellow gold', 11600)" data-bs-toggle="modal" data-bs-target="#addcart-modal">ADD TO BAG</button>  
         </div>
     </div>
 
