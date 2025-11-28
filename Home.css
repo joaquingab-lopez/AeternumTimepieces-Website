@@ -66,6 +66,33 @@ h6{
     border-color: #99927F;
     color: #FBFBFE;
 }
+.m-btn{
+    background-color: #99927F;
+    border-color: #99927F;
+    color: #FBFBFE;
+}
+.m-btn:hover{
+    background-color: #FBFBFE;
+    border-color: #99927F;
+    color: #99927F;
+}
+.m-btn2{
+    background-color: #FBFBFE;
+    border-color: #384556;
+    color: #384556;
+}
+.m-btn2:hover{
+    background-color: #384556;
+    border-color: #384556;
+    color: #FBFBFE;
+}
+.m-btn2 svg path{
+    fill: #FBFBFE !important; 
+}
+
+.m-text{
+    color: #99927F;
+}
 
 /*Brands*/
 .feature-icon {
