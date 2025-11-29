@@ -58,10 +58,6 @@ function clearCart() {
     updateCart();                       
 }
 
-function addedToCart() {
-  alert("Item Added to Cart!");
-}
-
 /*window.onload = updateCart;*/
 
 window.addEventListener("DOMContentLoaded", () => {
