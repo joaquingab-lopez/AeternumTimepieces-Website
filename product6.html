@@ -35,7 +35,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <a href="checkout.html" class="nav-link">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
                             <i class="bi bi-bag"></i>
                             <span id="cart-count" class="cart-badge">0</span>
                         </a>
@@ -164,6 +164,31 @@
           <a href="checkout.html">View Cart</a>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
         </div>
+      </div>
+    </div>
+  </div>
+    <!--Off Canvas Cart-->
+  <div class="offcanvas offcanvas-end o-cart" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+       <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary h-text">Your cart</span>
+              <span class="badge custom rounded-pill p-text" id="cart-number">0</span>
+            </h4>
+            <ul class="list-group mb-3" id="cart-items">
+            </ul>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong id="cart-total">$0</strong>
+              </li>
+            </ul>
+            
+        <div class="checkout-btns">
+          <a onclick="clearCart()" class="btn-clear">Clear Cart</a>
+          <a href="checkout.html" class="btn-out">Checkout</a>
       </div>
     </div>
   </div>

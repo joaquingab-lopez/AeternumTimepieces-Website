@@ -69,3 +69,34 @@ a:link {
 .navbar-nav li:hover {
     text-decoration: none;
 }
+.o-cart{
+    background-color: #384556;
+}
+.h-text{
+    color: #fbfbfe !important;
+}
+.checkout-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.checkout-btns a{
+    text-decoration: none;
+}
+.btn-clear{
+    background-color: #dc3544;
+    color: #fbfbfe;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-out{
+    background-color: #99927F;
+    color: #fbfbfe;
+    padding: 5px 80px;
+    border-radius: 5px;
+}
+.btn-clear:hover, .btn-out:hover{
+    filter: brightness(90%);
+}
