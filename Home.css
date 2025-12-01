@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-    letter-spacing: 3px;
 }
 body{
     overflow-x: hidden;
@@ -12,20 +11,24 @@ h1{
     font-family: Oswald;
     font-size: 50px;
     font-weight: 400;
+    letter-spacing: 3px;
 }
 h2{
     font-family: Oswald;
     font-size: 40px;
     font-weight: 400;
+    letter-spacing: 3px;
 }
 h3{
     font-family: Oswald;
     font-size: 30px;
     font-weight: 400;
+    letter-spacing: 3px;
 }
 h4{
-    font-family: Montserrat;
+    font-family: Oswald;
     font-size: 30px;
+    letter-spacing: 3px;
 }
 p{
     font-family: Montserrat;

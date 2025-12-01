@@ -79,6 +79,10 @@ body {
     font-size: 40px;
   }
 
+  .details p{
+    font-size: 20px;
+  }
+
   .price {
     color: #99927F;
     font-weight: 500;
@@ -97,6 +101,7 @@ body {
     font-size: 20px;
     font-family: "Oswald", sans-serif ;
     padding: 5px ;
+    border-radius: 10px;
   }
   .add:hover{
     background-color: #384556;
