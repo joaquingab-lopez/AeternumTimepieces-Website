@@ -1,5 +1,3 @@
-//salamat google and yt!!
-
 document.addEventListener('DOMContentLoaded', () => {
   const productsColumn = document.querySelector('.col-md-10');
   if (!productsColumn) return;
